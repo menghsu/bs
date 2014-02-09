@@ -1,0 +1,45 @@
+[1] [美]W.Richard Stevens, [美]Bill Fenner, [美]Andrew M. Rudoff. UNIX网络编程[M]. 第三版. 人民邮电出版社, 2010.
+[2] [美]W.Richard Stevens, [美]Stephen A. Rago. UNIX环境高级编程[M]. 第2版. 人民有点出版社, 2011.
+[3] 董昱, 马鑫. 基于netlink机制内核空间与用户空间通信的分析[J]. 测控技术, 2007(09):57-58+60.
+[4] 周莉, 柯健, 顾小晶. Netlink套接字在Linux系统通信中的应用研究[J]. 计算机与现代化, 2007(03):109-111.
+[5] 杜飞, 刘心松, 邱元杰, 等. netlink套接字在系统通信中的应用研究[J]. 微计算机信息, 2006(09):95-97+233.
+[6] [美]Danile P Bovet,Marco Cesati,陈莉君. 深入理解LINUX内核[M].北京:中国电力出版社,2004.
+
+Title-题名: 基于netlink机制内核空间与用户空间通信的分析
+Author-作者: 董昱;马鑫;
+Year-年: 2007
+PubTime-发表时间: 2007-09-18
+Keyword-关键词: Linux;;netlink;;内核空间;;用户空间
+Summary-摘要: 介绍了Linux操作系统的内核空间和用户空间的概念,给出了基于netlink通信的相关流程图和简要程序说明。基于netlink的内核空间与用户空间的双向通信,可以有效地解决内核空间与用户态进程间无阻塞通信的问题。
+Period-期: 09
+Page-页码: 57-58+60
+SrcDatabase-来源数据库: 期刊
+DOI-DOI: CNKI:SUN:IKJS.0.2007-09-019
+Organ-机构: 兰州交通大学自动化与电气工程学院,兰州交通大学自动化与电气工程学院 甘肃兰州730070,甘肃兰州730070
+Link-链接: http://elib.cnki.net/grid2008/brief/detailj.aspx?filename=IKJS200709019&dbname=CJFQ2007
+
+Title-题名: Netlink套接字在Linux系统通信中的应用研究
+Author-作者: 周莉;柯健;顾小晶;
+Year-年: 2007
+PubTime-发表时间: 2007-03-30
+Keyword-关键词: Netlink套接字;;系统通信;;进程间通信
+Summary-摘要: Netlink是Linux系统特有的、基于Socket编程接口的通信机制。作为一种比较新的进程间通信机制,Netlink套接字有其自身的优势。本文首先分析了Netlink套接字在进程通信中体现的优越性,然后详细阐述了使用netlink套接字进行用户进程与内核空间通信的具体应用。
+Period-期: 03
+Page-页码: 109-111
+SrcDatabase-来源数据库: 期刊
+DOI-DOI: CNKI:SUN:JYXH.0.2007-03-032
+Organ-机构: 苏州市职业大学计算机工程系,苏州市职业大学计算机工程系,苏州市职业大学计算机工程系 江苏苏州215000,江苏苏州215000,江苏苏州215000
+Link-链接: http://elib.cnki.net/grid2008/brief/detailj.aspx?filename=JYXH200703032&dbname=CJFQ2007
+
+Title-题名: netlink套接字在系统通信中的应用研究
+Author-作者: 杜飞;刘心松;邱元杰;牟力;
+Year-年: 2006
+PubTime-发表时间: 2006-03-30
+Keyword-关键词: netlink套接字;;系统调用;;proc文件系统;;回调函数
+Summary-摘要: 分析了当前普遍应用的几种内核和用户进程的通信方式的不足,详细讨论了linux2.4以上版本所提供的netlink套接字在内核和用户进程通信中的应用。
+Period-期: 09
+Page-页码: 95-97+233
+SrcDatabase-来源数据库: 期刊
+DOI-DOI: CNKI:SUN:WJSJ.0.2006-09-034
+Organ-机构: 成都电子科技大学,成都电子科技大学,成都电子科技大学,成都电子科技大学,
+Link-链接: http://elib.cnki.net/grid2008/brief/detailj.aspx?filename=WJSJ200609034&dbname=CJFQ2006
