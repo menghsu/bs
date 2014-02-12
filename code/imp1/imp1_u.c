@@ -1,6 +1,7 @@
 /*imp1_u.c*/
 #include <unistd.h>
 #include <stdio.h>
+#include <linux/netlink.h>
 #include <sys/socket.h>
 #include <linux/in.h>
 #include "imp1.h"
@@ -15,7 +16,7 @@ int main(void)
   int sockfd;
   int len;
 
-  sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_RAW);
+  sockfd = socket(AF_NETLINK, SOCK_RAW, NETLINK_GENERIC);
   if(sockfd < 0)
     {
       printf("can not create a socket\n");
