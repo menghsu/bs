@@ -6,7 +6,7 @@
 #include <net/sock.h>   
 #include <net/netlink.h> //it include linux/netlink.h   
   
-#define NETLINK_TEST 17   
+#define NETLINK_TEST 25   
 #define MAX_MSGSIZE 1024   
   
 struct sock *nl_sk = NULL;  
@@ -63,10 +63,13 @@ void sendnlmsg(char *message)
 int netlink_init(void)  
 {  
     int i = 10;  
-    struct completion cmpl;  
+    struct completion cmpl;
+
+	struct netlink_kernel_cfg cfg = {
+		.input = nl_data_ready,
+	};
   
-    nl_sk = netlink_kernel_create(&init_net, NETLINK_TEST, 1,   
-                                  NULL, NULL, THIS_MODULE);  
+    nl_sk = netlink_kernel_create(&init_net, NETLINK_TEST, &cfg);  
   
     if(!nl_sk){  
         printk(KERN_ERR "my_net_link: create netlink socket error./n");  
