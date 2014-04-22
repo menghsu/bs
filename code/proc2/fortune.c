@@ -4,9 +4,7 @@
 #include <linux/string.h>
 #include <linux/vmalloc.h>
 #include <asm/uaccess.h>
-MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Fortune Cookie Kernel Module");
-MODULE_AUTHOR("M. Tim Jones");
 #define MAX_COOKIE_LENGTH       PAGE_SIZE
 static struct proc_dir_entry *proc_entry;
 static char *cookie_pot;  // Space for fortune strings
@@ -51,7 +49,7 @@ int init_fortune_module( void )
     ret = -ENOMEM;
   } else {
     memset( cookie_pot, 0, MAX_COOKIE_LENGTH );
-    proc_entry = create_proc_entry( "fortune", 0644, NULL );
+    proc_entry = create_proc_entry( "fortune", 0666, NULL );
     if (proc_entry == NULL) {
       ret = -ENOMEM;
       vfree(cookie_pot);
@@ -69,7 +67,7 @@ int init_fortune_module( void )
 }
 void cleanup_fortune_module( void )
 {
- // remove_proc_entry("fortune", &proc_root);
+  remove_proc_entry("fortune", NULL);
   vfree(cookie_pot);
   printk(KERN_INFO "fortune: Module unloaded.\n");
 }
