@@ -1,3 +1,0 @@
-sudo bash -c " echo 0 > /proc/sys/net/ipv4/ip_forward "
-
-sudo 命令不支持重定向
