@@ -4,3 +4,5 @@ Linux内核：用户空间与内核空间的数据传递的研究与实现
 Linux是一个源代码开放的操作系统，其将存储器分为“内核空间”和“用户空间”，操作系统和驱动程序在内核空间运行，应用程序在用户空间运行，linux内核态程序需要与用户态程序进行数据交换。本文则调查研究linux内核态与用户态通信的几种通信方式，并选择其中的一种方式实现linux用户态与内核态的数据通信。
 
 Linux is an open source operating system, the memory is divided into "kernel space" and "user space", the operating system and drivers run in kernel space, the application runs in user space, linux kernel mode and user-mode program needs procedures for data exchange. In this paper, the investigation of several means of communication studies linux kernel mode states to communicate with the user, and choose one way to achieve data communication linux user mode and kernel mode.
+
+关键词： Linux内核通信 操作系统 procfs
