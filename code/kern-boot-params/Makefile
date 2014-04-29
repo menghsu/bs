@@ -1,0 +1,1 @@
+obj-y = setup_example.o
