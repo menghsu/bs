@@ -4,48 +4,35 @@
 <base target="_blank"/>
 </head>
 <body>
-<h3>NetLink相关：</h3>
-<p><a href="http://qos.ittc.ku.edu/netlink/html/index.html">Netlink Sockets - Overview</a>
-<p><a href="http://www.360doc.com/content/13/0912/17/496343_314005658.shtml">用户空间和内核空间通讯之Netlink - 360Doc个人图书馆</a>
-<p><a href="http://www.ibm.com/developerworks/cn/linux/l-kerns-usrs/" >在 Linux 下用户空间与内核空间数据交换的方式，第 1 部分: 内核启动参数、模块参数与sysfs、sysctl、系统调用和netlink</a>
-<p><a href="http://www.ibm.com/developerworks/cn/linux/l-kerns-usrs2/" >在 Linux 下用户空间与内核空间数据交换的方式，第 2 部分: procfs、seq_file、debugfs和relayfs</a>
-<p><a href="http://www.ibm.com/developerworks/cn/linux/l-netlink/index.html" >Linux 系统内核空间与用户空间通信的实现与分析</a>
-<p><a href="http://www.ibm.com/developerworks/cn/linux/l-cn-relay/index.html" >Relay：一种内核到用户空间的高效数据传输技术</a>
-<p><a href="http://www.ibm.com/developerworks/cn/linux/l-connector/index.html" >连接器（Netlink Connector）及其应用</a>
-
-<h3>实现:</h3>
-<p><a href="http://wenku.baidu.com/view/d2b9567b168884868762d6a6.html">Procfs fortune</a>
-<p><a href="http://blog.chinaunix.net/uid-20543672-id-3181461.html">内核模块启动参数</a>
-<p><a href="http://blog.csdn.net/xautlmx/article/details/16819393">如何在Linux上通过grub添加内核参数</a>
-
-<h3>各个方式的实现:</h3>
-<ol>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011459.html">内核启动参数</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011470.html">模块参数与sysfs</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011675.html">sysctl</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011689.html">syscall</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011722.html">netlink</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011141.html">procfs</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011261.html">seq_file</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011124.html">debugfs</a>
-	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011270.html">relayfs</a>
-</ol>
-
-<h3>注：</h3>
-<p><a href="http://blog.csdn.net/zhangskd/article/details/8447277">sysctl使用方法的变化</a>
-<p><a href="http://lxr.free-electrons.com/source/include/linux/sysctl.h?v=2.6.33">sysctl.h常量定义</a>
-<p><a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?_sysctl+2">man 2 sysctl</a>
-
 <h3>通信方式介绍：</h3>
 <p><a href="http://www.kerneltravel.net/jiaoliu/005.htm" >linux内核空间与用户空间信息交互方法介绍</a>
 <p><a href="http://blog.csdn.net/zhangskd/article/details/6956638" >linux内核空间和用户空间详解 - zhangskd的专栏 - 博客频道 - CSDN.NET</a>
 <p><a href="http://blog.csdn.net/f22jay/article/details/7925531">Linux用户空间与内核空间</a>
+<p><a href="http://www.ibm.com/developerworks/cn/linux/l-kerns-usrs/" >在 Linux 下用户空间与内核空间数据交换的方式，第 1 部分: 内核启动参数、模块参数与sysfs、sysctl、系统调用和netlink</a>
+<p><a href="http://www.ibm.com/developerworks/cn/linux/l-kerns-usrs2/" >在 Linux 下用户空间与内核空间数据交换的方式，第 2 部分: procfs、seq_file、debugfs和relayfs</a>
+<p><a href="http://www.ibm.com/developerworks/cn/linux/l-netlink/index.html" >Linux 系统内核空间与用户空间通信的实现与分析</a>
 
-<h3>模块加载：</h3>
-<p><a href="http://baike.baidu.com/view/1598927.htm" >Linux 载入模块命令 insmod_百度百科</a>
-<p><a href="http://wbwk2005.blog.51cto.com/2215231/435601" >linux内核模块加载及相关命令 - bingbing - 51CTO技术博客</a>
-<p><a href="http://www.cnblogs.com/ycz9999/archive/2012/04/08/2437686.html" >Linux设备驱动程序学习（5）-并发和竞态 - ycz9999 - 博客园</a>
-<p><a href="http://blog.csdn.net/think_tom/article/details/16357989" >Ubuntu 内核源码外编译 linux模块 - think_tom的专栏 - 博客频道 - CSDN.NET</a>
+<h3>各个方式的实现:</h3>
+<ol>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011459.html">内核启动参数</a>
+		<a href="http://blog.chinaunix.net/uid-20543672-id-3181461.html">内核模块启动参数</a>
+		<a href="http://blog.csdn.net/xautlmx/article/details/16819393">如何在Linux上通过grub添加内核参数</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011470.html">模块参数与sysfs</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011675.html">sysctl</a>
+		<a href="http://blog.csdn.net/zhangskd/article/details/8447277">sysctl使用方法的变化</a>
+		<a href="http://lxr.free-electrons.com/source/include/linux/sysctl.h?v=2.6.33">sysctl.h常量定义</a>
+		<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?_sysctl+2">man 2 sysctl</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011689.html">syscall</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011722.html">netlink</a>
+		<a href="http://qos.ittc.ku.edu/netlink/html/index.html">Netlink Sockets - Overview</a>
+		<a href="http://www.360doc.com/content/13/0912/17/496343_314005658.shtml">用户空间和内核空间通讯之Netlink - 360Doc个人图书馆</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011141.html">procfs</a>
+		<a href="http://wenku.baidu.com/view/d2b9567b168884868762d6a6.html">Procfs fortune</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011261.html">seq_file</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011124.html">debugfs</a>
+	<li><a href="http://www.cnblogs.com/hoys/archive/2011/04/10/2011270.html">relayfs</a>
+		<a href="http://www.ibm.com/developerworks/cn/linux/l-cn-relay/index.html" >Relay：一种内核到用户空间的高效数据传输技术</a>
+</ol>
 
 <h3>Linux介绍资料：</h3>
 <p><a href="http://www.kerneltravel.net/?page_id=12" >Linux内核之旅 » 电子杂志</a>
@@ -65,6 +52,9 @@ margin-left:200px;
 p{
 margin:0 0 0 20px;
 font-size:0.9em;
+}
+a{
+margin:0 20px 0 0;
 }
 </style>
 </body>
