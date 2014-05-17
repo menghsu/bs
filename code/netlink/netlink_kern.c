@@ -125,6 +125,3 @@ static void netlink_exit(void)
 module_init(netlink_init);
 module_exit(netlink_exit);
 
-MODULE_AUTHOR("wangpengqi");
-MODULE_LICENSE("GPL");
-

@@ -1,4 +1,3 @@
-//filename: kern-boot-params.c
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/string.h>
